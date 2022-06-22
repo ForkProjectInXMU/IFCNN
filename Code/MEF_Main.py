@@ -24,7 +24,7 @@ model.eval()
 model = model.cuda()
 
 
-dataset = 'ME'
+dataset = 'SICETRAIN'
 is_save = True
 is_gray = False
 is_folder = True
@@ -33,7 +33,7 @@ is_save_Y = False
 mean = [0, 0, 0]
 std = [1, 1, 1]
 begin_time = time.time()
-root = 'datasets/MEDataset/'
+root = 'datasets/SICETRAINDataset/'
 
 for subdir, dirs, files in os.walk(root):
     if toggle:
